@@ -1,0 +1,35 @@
+<html>
+  <head>
+<script src ="p5.min.js"></script>
+     <style>
+  body {
+    overflow:hidden;
+    margin :0;
+    padding :0;
+  }
+  </style>
+  </head>
+<body>
+  <script>
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+function setup(){
+      createCanvas(w,h);
+}
+    function draw(){
+    background(0);
+      textSize(32);
+             fill(color("white"));
+        text('Use the keys "a" and "d" to move left and right.' , 10 , 30);
+            text('Use the space bar to jump.' , 10 , 100);
+             text('Touch the yellow ball to gain score .' , 10 , 170);
+             text('Press the key "s" to begin playing.' , 10 , 240);
+    }
+    function keyPressed() {
+    if (keyCode == 83){
+    location.href = "dbz.html"
+    }
+    }
+</script>
+</body>
+</html>
